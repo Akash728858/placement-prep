@@ -151,8 +151,8 @@ export default function Dashboard() {
                   <Radar
                     name="Score"
                     dataKey="value"
-                    stroke="hsl(245, 58%, 51%)"
-                    fill="hsl(245, 58%, 51%)"
+                    stroke="#8B0000"
+                    fill="#8B0000"
                     fillOpacity={0.3}
                     strokeWidth={2}
                   />

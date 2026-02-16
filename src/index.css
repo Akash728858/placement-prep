@@ -1,9 +1,22 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: hsl(245, 58%, 51%);
+  --color-primary: #8B0000;
+  --color-primary-dark: #6d0000;
   --color-primary-foreground: hsl(0, 0%, 100%);
 }
+
+/* Force deep red theme – overrides any blue */
+.bg-primary { background-color: #8B0000 !important; }
+.bg-primary\/5 { background-color: rgba(139, 0, 0, 0.05) !important; }
+.bg-primary\/10 { background-color: rgba(139, 0, 0, 0.1) !important; }
+.bg-primary\/20 { background-color: rgba(139, 0, 0, 0.2) !important; }
+.text-primary { color: #8B0000 !important; }
+.border-primary { border-color: #8B0000 !important; }
+.border-primary\/20 { border-color: rgba(139, 0, 0, 0.2) !important; }
+.focus\:border-primary:focus { border-color: #8B0000 !important; }
+.focus\:ring-primary:focus { --tw-ring-color: #8B0000 !important; box-shadow: 0 0 0 2px #8B0000 !important; }
+.focus\:ring-primary\/20:focus { --tw-ring-color: rgba(139, 0, 0, 0.2) !important; box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.2) !important; }
 
 body {
   margin: 0;
